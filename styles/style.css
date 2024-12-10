@@ -303,6 +303,7 @@
 
   .main__section--three-columns {
     grid-template-columns: 1fr;
+    grid-column: span 1;
   }
 
   .main__section--three-columns .main__section-title {
@@ -316,10 +317,6 @@
   .main__section--two-columns {
     grid-template-columns: 236px 1fr;
   }
-}
-
-.main__section--three-columns {
-  grid-column: span 1;
 }
 
 @media (max-width: 720px) {
@@ -338,8 +335,8 @@
   }
 
   .header__text {
-    padding: 56px 0;
-    gap: 58px;
+    padding: 60px 0;
+    gap: 60px;
   }
 
   .rec {
