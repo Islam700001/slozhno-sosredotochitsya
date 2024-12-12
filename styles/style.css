@@ -14,7 +14,7 @@
   position: relative;
   grid-template-rows: 1fr auto;
   padding: 20px;
-  min-height: max(100vh, 668px);
+  min-height: max(100vh, 768px);
 }
 
 .decorated-zone::after,
