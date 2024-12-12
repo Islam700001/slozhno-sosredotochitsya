@@ -43,7 +43,7 @@
   position: absolute;
   text-transform: uppercase;
   top: 20px;
-  right: 27px;
+  right: 28px;
   color: var(--accent-color);
 }
 
@@ -51,11 +51,11 @@
   content: "";
   display: inline-block;
   background-color: var(--accent-color);
-  box-shadow: 0 0 5px var(--accent-color);
+  box-shadow: 0 0 2px 2px var(--accent-color);
   margin-inline-start: 10px;
   border-radius: 50%;
-  width: 12px;
-  height: 12px;
+  width: 9px;
+  height: 9px;
 }
 
 .header__theme-menu-list {
@@ -98,8 +98,8 @@
   display: flex;
   color: var(--title-color);
   font-weight: 700;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  margin-inline-start: -20px;
+  font-size: var(--font-size-standart);
+  margin-left: -20px;
   line-height: 82.5%;
   text-shadow: 4px 4px 0px var(--title-shadow-color);
 }
@@ -113,10 +113,10 @@
 
 .header__subtitle {
   display: flex;
-  width: clamp(355px, 50%, 491px);
+  /*width: clamp(355px, 50%, 491px);*/
+  max-width: 491px;
   align-self: flex-end;
-  margin: auto 0;
-  line-height: 22px;
+  line-height: 23.4px;
 }
 
 .title-decor {
@@ -142,28 +142,28 @@
   gap: 20px;
 }
 
-.main__section--highlighted {
+.main__section--focus {
   grid-template-columns: 315px 1fr;
   row-gap: 20px;
 }
 
-.main__section--highlighted .main__section-title {
+.main__section--focus .main__section-title {
   grid-row: span 2;
 }
 
-.main__section--three-columns {
+.main__section--distractions {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   column-gap: 20px;
   row-gap: 20px;
 }
 
-.main__section--three-columns .main__section-title {
+.main__section--distractions .main__section-title {
   grid-column: span 3;
   width: 30%;
 }
 
-.main__section--two-columns {
+.main__section--focus-tips {
   grid-template-columns: 315px 1fr;
 }
 
@@ -202,7 +202,7 @@
 
 .text-link {
   text-decoration: none;
-  text-shadow: 1px 2px 0 var(--title-shadow-color);
+  text-shadow: 1px 2px 0 var(--accent-color);
 }
 
 .text-link:hover {
@@ -286,35 +286,39 @@
     flex-direction: column;
   }
 
-  .header__title {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
-
   .header__text {
-    padding: 170px 0;
+    padding: 173px 0;
     display: flex;
     flex-direction: column;
-    gap: 157px;
+    gap: 190px;
   }
 
-  .main__section--highlighted {
+  .header__subtitle {
+    justify-self: end;
+    max-width: 364px;
+    align-self: end;
+    margin-top: -25px;
+  }
+
+  .main__section--focus {
     grid-template-columns: 236px 1fr;
+    margin-top: -10px;
   }
 
-  .main__section--three-columns {
+  .main__section--distractions {
     grid-template-columns: 1fr;
     grid-column: span 1;
   }
 
-  .main__section--three-columns .main__section-title {
+  .main__section--distractions .main__section-title {
     grid-column: span 1;
   }
 
   .footer-title {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    font-size: var(--main-font-size-title);
   }
 
-  .main__section--two-columns {
+  .main__section--focus-tips {
     grid-template-columns: 236px 1fr;
   }
 }
@@ -326,17 +330,20 @@
 
   .header__theme-menu {
     place-self: center end;
-    padding-top: 54px;
+    padding-top: 46px;
   }
 
   .header__title {
     margin-inline-start: 0;
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    font-size: var(--main-font-size-title);
   }
 
   .header__text {
-    padding: 60px 0;
-    gap: 60px;
+    gap: 77px;
+    padding-top: 60px;
+    padding-right: 0px;
+    padding-bottom: 57px;
+    padding-left: 0px;
   }
 
   .rec {
@@ -355,26 +362,26 @@
   }
 
   .main {
-    padding-block: 40px;
+    padding-block: 50px;
     padding-inline: 10px;
-    gap: 50px;
+    gap: 51px;
   }
 
-  .main__section--highlighted {
+  .main__section--focus {
     row-gap: 24px;
   }
 
-  .main__section--three-columns {
+  .main__section--distractions {
     width: 100%;
     row-gap: 24px;
   }
 
-  .main__section--highlighted,
-  .main__section--two-columns {
+  .main__section--focus,
+  .main__section--focus-tips {
     grid-template-columns: 1fr;
   }
 
-  .main__section--three-columns .main__section-title {
+  .main__section--distractions .main__section-title {
     width: 100%;
   }
 
