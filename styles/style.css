@@ -14,7 +14,8 @@
   position: relative;
   grid-template-rows: 1fr auto;
   padding: 20px;
-  min-height: max(100vh, 668px);
+  block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .decorated-zone::after,
@@ -113,7 +114,6 @@
 
 .header__subtitle {
   display: flex;
-  /*width: clamp(355px, 50%, 491px);*/
   max-width: 491px;
   align-self: flex-end;
   line-height: 23.4px;
@@ -302,7 +302,7 @@
 
   .main__section--focus {
     grid-template-columns: 236px 1fr;
-    margin-top: -10px;
+    margin-top: 0;
   }
 
   .main__section--distractions {
@@ -362,7 +362,7 @@
   }
 
   .main {
-    padding-block: 50px;
+    padding-block: 40px;
     padding-inline: 10px;
     gap: 51px;
   }
