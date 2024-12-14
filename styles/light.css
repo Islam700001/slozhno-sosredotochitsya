@@ -9,6 +9,7 @@
   --decorated-color: #353430;
   --section-text-color: var(--main-text-color);
   --button-color: var(--text-color);
+  --button-color-rgba: rgba(50, 49, 45, 0.4);
   --bg-color: #fff1f7;
 }
 
@@ -30,6 +31,7 @@
   --section-text-color: var(--main-text-color);
   --button-color: var(--text-color);
   --bg-color: #fff1f7;
+  --button-color-rgba: rgba(50, 49, 45, 0.4);
   }
 }
 
